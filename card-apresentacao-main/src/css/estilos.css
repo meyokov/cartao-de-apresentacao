@@ -1,0 +1,140 @@
+body{
+    background-image: url(../img/fundo-site.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+
+    font-family: 'VT323', monospace;
+    color: #b8bbc5;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 30px;
+}
+
+.cartao{
+    background-color: #070d125b;
+    width: 370px;
+    border: 2px solid rgba(28, 144, 144, 0.863);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.cartao .minhas-informacoes{
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /*alinha horizontalmente por causa do flex direction column*/
+    gap: 10px;
+}
+
+.cartao .minhas-informacoes img{
+    border-radius: 50px;
+    border: 4px solid rgb(28, 144, 144, 0.863);
+    width: 96px;
+    height: 96px;
+}
+
+.cartao .minhas-informacoes .nome{
+    font-size: 26px;
+}
+
+.cartao .minhas-informacoes .cargo{
+    font-size: 20px;
+    color: #b8bbc5;
+}
+
+.cartao .conteudo{
+    background-color: rgba(55, 83, 87, 0.274);
+    margin-top: 15px;
+}
+
+.cartao .abas{
+    display: flex;
+}
+
+.cartao .abas .aba{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+
+a{
+    color: blue;
+}
+
+.cartao .abas img{
+    width: 30px;
+}
+
+.cartao .abas .aba.selecionado{
+    background-color: #070d125b;
+}
+
+.cartao .informacoes-abas{
+    background-color: #070d125b;
+}
+
+.cartao .abas .aba:hover{
+    background-color:rgba(36, 66, 66, 0.863);
+}
+
+.informacoes-abas .informacao{
+    min-height: 260px;
+    padding: 15%;
+    display: none;
+    
+}
+
+.informacoes-abas .informacao.selecionado{
+    display: block;
+}
+
+.informacoes-abas .sub-titulo{
+    font-size: 22px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.informacoes-abas .descricao{
+    font-size: 20px;
+    max-height: 180px;
+    overflow-y: auto;
+    padding-right: 15px;
+}
+
+.informacoes-abas .descricao span{
+    color: rgb(55, 211, 203);
+}
+
+.redes-sociais{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    align-items: center;
+    max-height: 180px;
+    overflow-y: auto;
+}
+
+.redes-sociais li a{
+    background-color: rgba(33, 47, 56, 0.863);
+    width: 250px;
+    display: block;
+    color: rgb(251, 66, 112);
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.redes-sociais li a:hover{
+    opacity: 0.8;
+}
+
+/*para estilizar separadamente: .redes-sociais .[item a ser alterado]{...} */
+
